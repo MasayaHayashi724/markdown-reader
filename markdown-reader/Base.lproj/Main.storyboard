@@ -59,18 +59,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ogC-Mh-KWG">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPy-Uj-rVq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="iQN-ae-IIx" id="Isk-RU-XSg"/>
+                                </connections>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FPy-Uj-rVq" firstAttribute="leading" secondItem="WbX-mX-RHE" secondAttribute="leading" id="MNa-II-6m0"/>
+                            <constraint firstAttribute="trailing" secondItem="FPy-Uj-rVq" secondAttribute="trailing" id="ebb-Ob-F9U"/>
+                            <constraint firstItem="FPy-Uj-rVq" firstAttribute="top" secondItem="WbX-mX-RHE" secondAttribute="top" id="qiG-NZ-BhU"/>
+                            <constraint firstItem="0ck-iR-q4i" firstAttribute="top" secondItem="FPy-Uj-rVq" secondAttribute="bottom" id="uhH-36-yOj"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="mdTextView" destination="ogC-Mh-KWG" id="Z3y-G6-KE6"/>
+                        <outlet property="mdWebView" destination="FPy-Uj-rVq" id="NHH-Kb-P5a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ktf-z7-l4A" userLabel="First Responder" sceneMemberID="firstResponder"/>

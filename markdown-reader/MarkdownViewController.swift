@@ -16,17 +16,26 @@ class MarkdownViewController: UIViewController {
 
     // - UI
 
-    @IBOutlet private weak var mdTextView: UITextView!
+    @IBOutlet weak var mdWebView: UIWebView!
 
     // - View Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.mdTextView.text = content
+        guard let url = Bundle.main.url(forResource: "md", withExtension: "html") else { return }
+        let req = URLRequest(url: url)
+        self.mdWebView.loadRequest(req)
     }
 
     func set(title: String, content: String) {
         self.title = title.headerWithoutPrefix()
         self.content = content
+    }
+}
+
+extension MarkdownViewController: UIWebViewDelegate {
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        let js = "insert('\(content)');"
+        self.mdWebView.stringByEvaluatingJavaScript(from: js)
     }
 }

@@ -52,6 +52,6 @@ extension ViewController: UITableViewDelegate {
         for i in startIndex..<endIndex {
             contentArray.append(fullContent[i])
         }
-        return contentArray.joined(separator: "\n")
+        return contentArray.joined(separator: "\\n")
     }
 }
