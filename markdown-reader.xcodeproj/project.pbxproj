@@ -12,6 +12,7 @@
 		5718439F1EDFE6FE0076EE54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5718439D1EDFE6FE0076EE54 /* Main.storyboard */; };
 		571843A11EDFE6FE0076EE54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571843A01EDFE6FE0076EE54 /* Assets.xcassets */; };
 		571843A41EDFE6FE0076EE54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571843A21EDFE6FE0076EE54 /* LaunchScreen.storyboard */; };
+		57EE31D51EE129AE0038D21C /* portfolio.md in Resources */ = {isa = PBXBuildFile; fileRef = 571843AB1EDFE86D0076EE54 /* portfolio.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		571843A01EDFE6FE0076EE54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		571843A31EDFE6FE0076EE54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		571843A51EDFE6FE0076EE54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571843AB1EDFE86D0076EE54 /* portfolio.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = portfolio.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				571843A01EDFE6FE0076EE54 /* Assets.xcassets */,
 				571843A21EDFE6FE0076EE54 /* LaunchScreen.storyboard */,
 				571843A51EDFE6FE0076EE54 /* Info.plist */,
+				571843AB1EDFE86D0076EE54 /* portfolio.md */,
 			);
 			path = "markdown-reader";
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57EE31D51EE129AE0038D21C /* portfolio.md in Resources */,
 				571843A41EDFE6FE0076EE54 /* LaunchScreen.storyboard in Resources */,
 				571843A11EDFE6FE0076EE54 /* Assets.xcassets in Resources */,
 				5718439F1EDFE6FE0076EE54 /* Main.storyboard in Resources */,
@@ -302,6 +306,7 @@
 				571843AA1EDFE6FE0076EE54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
