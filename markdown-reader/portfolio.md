@@ -1,6 +1,15 @@
 # ポートフォリオ
 
+## ソーシャルアカウント
+
+- GitHub
+  - https://github.com/MasayaHayashi724
+- Facebook
+  - https://www.facebook.com/mcdonalds.only
+
 ## 経歴
+
+### 活動
 
 - 2011年4月 明石工業高等専門学校 電気情報工学科 入学
   - 2011年4月〜2014年3月 ハンドボール部(中学時代はバスケットボール部)
@@ -10,27 +19,21 @@
 - 2016年4月 東京大学 工学部 電気電子学科 2年次編入学
   - 2017年2月〜 [株式会社 ookami](http://www.playerapp.tokyo/ookamiinc/)にて長期インターン
 
-## 職歴、インターン経験
+### 職歴、インターン経験
 
 - 2017年2月〜 [株式会社 ookami](http://www.playerapp.tokyo/ookamiinc/)
   - 長期インターン
   - SwiftによるiOSアプリ[Player!](https://itunes.apple.com/jp/app/id897872395)の開発
   - Ruby on RailsによるAPIの開発
 
+## アウトプット
 
-## 卒業研究および卒業論文
+### 卒業研究および卒業論文
 
   - 物理数値シミュレーション(磁場中を移動する金属物体の運動シミュレーション)
     - 詳しくは[こちら](https://github.com/MasayaHayashi724/graduation-thesis)
 
-## ソーシャルアカウント
-
-- GitHub
-  - https://github.com/MasayaHayashi724
-- Facebook
-  - https://www.facebook.com/mcdonalds.only
-
-## 公開中のサービス、アプリケーション、ライブラリ
+### 公開中のサービス、アプリケーション、ライブラリ
 
 - Task Management App
   - [GitHub](https://github.com/MasayaHayashi724/todo-app)
