@@ -72,17 +72,17 @@
 		571843981EDFE6FE0076EE54 /* markdown-reader */ = {
 			isa = PBXGroup;
 			children = (
-				57D985CF1EE1BBCD000EC907 /* MarkdownRendering */,
 				57EE31D61EE12D7F0038D21C /* Extentension */,
+				57D985CF1EE1BBCD000EC907 /* MarkdownRendering */,
 				571843991EDFE6FE0076EE54 /* AppDelegate.swift */,
 				571843A01EDFE6FE0076EE54 /* Assets.xcassets */,
 				571843A51EDFE6FE0076EE54 /* Info.plist */,
 				571843A21EDFE6FE0076EE54 /* LaunchScreen.storyboard */,
 				5718439D1EDFE6FE0076EE54 /* Main.storyboard */,
+				57D985CD1EE19126000EC907 /* MarkdownViewController.swift */,
 				57EE31D91EE132880038D21C /* ViewController+TableView.swift */,
 				5718439B1EDFE6FE0076EE54 /* ViewController.swift */,
 				571843AB1EDFE86D0076EE54 /* portfolio.md */,
-				57D985CD1EE19126000EC907 /* MarkdownViewController.swift */,
 			);
 			path = "markdown-reader";
 			sourceTree = "<group>";
@@ -90,13 +90,14 @@
 		57D985CF1EE1BBCD000EC907 /* MarkdownRendering */ = {
 			isa = PBXGroup;
 			children = (
-				57D985D01EE1BD81000EC907 /* marked.js */,
-				57D985D21EE1BE79000EC907 /* github-markdown.css */,
-				57D985D41EE1BF25000EC907 /* emojify.min.js */,
 				57D985D61EE1BF82000EC907 /* emojify.min.css */,
+				57D985D41EE1BF25000EC907 /* emojify.min.js */,
+				57D985D21EE1BE79000EC907 /* github-markdown.css */,
+				57D985D01EE1BD81000EC907 /* marked.js */,
 				57D985D81EE1BFBB000EC907 /* md.html */,
 			);
 			name = MarkdownRendering;
+			path = MarkdownRendering;
 			sourceTree = "<group>";
 		};
 		57EE31D61EE12D7F0038D21C /* Extentension */ = {
