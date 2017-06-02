@@ -40,6 +40,7 @@ extension ViewController: UITableViewDelegate {
         guard let firstIndex = fullContent.index(of: line) else { return nil }
         for i in (firstIndex + 1)..<fullContent.count {
             if fullContent[i].hasHeaderPrefix(of: headerPrefix) { return i }
+            if fullContent[i].hasHeaderPrefix(upperThan: headerPrefix) { return i }
         }
         return fullContent.count - 1
     }

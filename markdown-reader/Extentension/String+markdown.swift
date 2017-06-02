@@ -27,6 +27,12 @@ extension String {
         return prefix == headerPrefix.rawValue
     }
 
+    func hasHeaderPrefix(upperThan headerPrefix: HeaderPrefix) -> Bool {
+        guard self.hasHeaderPrefix() else { return false }
+        guard let prefix = self.components(separatedBy: " ").first else { return false }
+        return prefix.characters.count < headerPrefix.rawValue.characters.count
+    }
+
     func headerWithoutPrefix() -> String? {
         guard self.hasHeaderPrefix() else { return nil }
         var headerArray = self.components(separatedBy: " ")
