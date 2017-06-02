@@ -8,18 +8,37 @@
 
 import UIKit
 
+enum HeaderPrefix: String {
+    case first = "#"
+    case second = "##"
+    case third = "###"
+    case fourth = "####"
+    case fifth = "#####"
+}
+
 class ViewController: UIViewController {
+
+    // - Properties
+
+    private var fullContent: [String] = []
+    private var headers: [String] = []
+
+    // - View Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.getContent()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func getContent() {
+        guard let path: String = Bundle.main.path(forResource: "portfolio", ofType: "md") else { fatalError("No file named portfolio.md") }
+        do {
+            let fullContent = try String(contentsOfFile: path)
+            self.fullContent = fullContent.components(separatedBy: .newlines)
+            self.headers = self.fullContent.filter { $0.hasHeaderPrefix() }
+        } catch {
+            print("Failed to get content of file")
+        }
     }
-
-
 }
 

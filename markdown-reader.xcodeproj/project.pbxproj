@@ -13,6 +13,7 @@
 		571843A11EDFE6FE0076EE54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571843A01EDFE6FE0076EE54 /* Assets.xcassets */; };
 		571843A41EDFE6FE0076EE54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571843A21EDFE6FE0076EE54 /* LaunchScreen.storyboard */; };
 		57EE31D51EE129AE0038D21C /* portfolio.md in Resources */ = {isa = PBXBuildFile; fileRef = 571843AB1EDFE86D0076EE54 /* portfolio.md */; };
+		57EE31D81EE12D9D0038D21C /* String+markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EE31D71EE12D9D0038D21C /* String+markdown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		571843A31EDFE6FE0076EE54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		571843A51EDFE6FE0076EE54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		571843AB1EDFE86D0076EE54 /* portfolio.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = portfolio.md; sourceTree = "<group>"; };
+		57EE31D71EE12D9D0038D21C /* String+markdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+markdown.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		571843981EDFE6FE0076EE54 /* markdown-reader */ = {
 			isa = PBXGroup;
 			children = (
+				57EE31D61EE12D7F0038D21C /* Extentension */,
 				571843991EDFE6FE0076EE54 /* AppDelegate.swift */,
 				5718439B1EDFE6FE0076EE54 /* ViewController.swift */,
 				5718439D1EDFE6FE0076EE54 /* Main.storyboard */,
@@ -65,6 +68,14 @@
 				571843AB1EDFE86D0076EE54 /* portfolio.md */,
 			);
 			path = "markdown-reader";
+			sourceTree = "<group>";
+		};
+		57EE31D61EE12D7F0038D21C /* Extentension */ = {
+			isa = PBXGroup;
+			children = (
+				57EE31D71EE12D9D0038D21C /* String+markdown.swift */,
+			);
+			name = Extentension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57EE31D81EE12D9D0038D21C /* String+markdown.swift in Sources */,
 				5718439C1EDFE6FE0076EE54 /* ViewController.swift in Sources */,
 				5718439A1EDFE6FE0076EE54 /* AppDelegate.swift in Sources */,
 			);
