@@ -66,16 +66,22 @@
                                     <outlet property="delegate" destination="iQN-ae-IIx" id="Isk-RU-XSg"/>
                                 </connections>
                             </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ZBp-Zf-w5i">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FPy-Uj-rVq" firstAttribute="leading" secondItem="WbX-mX-RHE" secondAttribute="leading" id="MNa-II-6m0"/>
+                            <constraint firstItem="ZBp-Zf-w5i" firstAttribute="centerX" secondItem="WbX-mX-RHE" secondAttribute="centerX" id="NyA-TP-gjP"/>
                             <constraint firstAttribute="trailing" secondItem="FPy-Uj-rVq" secondAttribute="trailing" id="ebb-Ob-F9U"/>
+                            <constraint firstItem="ZBp-Zf-w5i" firstAttribute="centerY" secondItem="WbX-mX-RHE" secondAttribute="centerY" id="fSR-M5-GGY"/>
                             <constraint firstItem="FPy-Uj-rVq" firstAttribute="top" secondItem="WbX-mX-RHE" secondAttribute="top" id="qiG-NZ-BhU"/>
                             <constraint firstItem="0ck-iR-q4i" firstAttribute="top" secondItem="FPy-Uj-rVq" secondAttribute="bottom" id="uhH-36-yOj"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="ZBp-Zf-w5i" id="Mic-YV-VHa"/>
                         <outlet property="mdWebView" destination="FPy-Uj-rVq" id="NHH-Kb-P5a"/>
                     </connections>
                 </viewController>

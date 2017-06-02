@@ -17,10 +17,12 @@ class MarkdownViewController: UIViewController {
     // - UI
 
     @IBOutlet weak var mdWebView: UIWebView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     // - View Life Cycle
 
     override func viewDidLoad() {
+        self.activityIndicator.startAnimating()
         super.viewDidLoad()
         guard let url = Bundle.main.url(forResource: "md", withExtension: "html") else { return }
         let req = URLRequest(url: url)
@@ -37,5 +39,6 @@ extension MarkdownViewController: UIWebViewDelegate {
     func webViewDidFinishLoad(_ webView: UIWebView) {
         let js = "insert('\(content)');"
         self.mdWebView.stringByEvaluatingJavaScript(from: js)
+        self.activityIndicator.stopAnimating()
     }
 }
