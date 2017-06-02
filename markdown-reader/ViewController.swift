@@ -18,10 +18,18 @@ enum HeaderPrefix: String {
 
 class ViewController: UIViewController {
 
+    // - UI
+
+    @IBOutlet private weak var headerTableView: UITableView!
+
     // - Properties
 
     private var fullContent: [String] = []
-    private var headers: [String] = []
+    var headers: [String] = [] {
+        didSet {
+            self.headerTableView.reloadData()
+        }
+    }
 
     // - View Life Cycle
 
