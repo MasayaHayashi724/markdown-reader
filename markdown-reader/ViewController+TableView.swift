@@ -18,9 +18,24 @@ extension ViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let prefix = headers[indexPath.row].components(separatedBy: " ").first else { fatalError("Invalid prefix") }
+        guard let header = headers[indexPath.row].headerWithoutPrefix() else { fatalError("Invalid header") }
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text = headers[indexPath.row]
+        let indent = createIndent(for: prefix.characters.count)
+        cell.textLabel?.text = indent + header
         return cell
+    }
+
+    private func createIndent(for level: Int) -> String {
+        var indent = ""
+        for i in 1..<level {
+            if i == 1 {
+                indent = "-- " + indent
+            } else {
+                indent = "   " + indent
+            }
+        }
+        return indent
     }
 }
 
