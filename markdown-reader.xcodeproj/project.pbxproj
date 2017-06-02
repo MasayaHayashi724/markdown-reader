@@ -13,6 +13,11 @@
 		571843A11EDFE6FE0076EE54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571843A01EDFE6FE0076EE54 /* Assets.xcassets */; };
 		571843A41EDFE6FE0076EE54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571843A21EDFE6FE0076EE54 /* LaunchScreen.storyboard */; };
 		57D985CE1EE19126000EC907 /* MarkdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D985CD1EE19126000EC907 /* MarkdownViewController.swift */; };
+		57D985D11EE1BD81000EC907 /* marked.js in Resources */ = {isa = PBXBuildFile; fileRef = 57D985D01EE1BD81000EC907 /* marked.js */; };
+		57D985D31EE1BE79000EC907 /* github-markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = 57D985D21EE1BE79000EC907 /* github-markdown.css */; };
+		57D985D51EE1BF25000EC907 /* emojify.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 57D985D41EE1BF25000EC907 /* emojify.min.js */; };
+		57D985D71EE1BF82000EC907 /* emojify.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 57D985D61EE1BF82000EC907 /* emojify.min.css */; };
+		57D985D91EE1BFBB000EC907 /* md.html in Resources */ = {isa = PBXBuildFile; fileRef = 57D985D81EE1BFBB000EC907 /* md.html */; };
 		57EE31D51EE129AE0038D21C /* portfolio.md in Resources */ = {isa = PBXBuildFile; fileRef = 571843AB1EDFE86D0076EE54 /* portfolio.md */; };
 		57EE31D81EE12D9D0038D21C /* String+markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EE31D71EE12D9D0038D21C /* String+markdown.swift */; };
 		57EE31DA1EE132880038D21C /* ViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EE31D91EE132880038D21C /* ViewController+TableView.swift */; };
@@ -28,6 +33,11 @@
 		571843A51EDFE6FE0076EE54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		571843AB1EDFE86D0076EE54 /* portfolio.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = portfolio.md; sourceTree = "<group>"; };
 		57D985CD1EE19126000EC907 /* MarkdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownViewController.swift; sourceTree = "<group>"; };
+		57D985D01EE1BD81000EC907 /* marked.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = marked.js; sourceTree = "<group>"; };
+		57D985D21EE1BE79000EC907 /* github-markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "github-markdown.css"; sourceTree = "<group>"; };
+		57D985D41EE1BF25000EC907 /* emojify.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = emojify.min.js; sourceTree = "<group>"; };
+		57D985D61EE1BF82000EC907 /* emojify.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = emojify.min.css; sourceTree = "<group>"; };
+		57D985D81EE1BFBB000EC907 /* md.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = md.html; sourceTree = "<group>"; };
 		57EE31D71EE12D9D0038D21C /* String+markdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+markdown.swift"; sourceTree = "<group>"; };
 		57EE31D91EE132880038D21C /* ViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +72,7 @@
 		571843981EDFE6FE0076EE54 /* markdown-reader */ = {
 			isa = PBXGroup;
 			children = (
+				57D985CF1EE1BBCD000EC907 /* MarkdownRendering */,
 				57EE31D61EE12D7F0038D21C /* Extentension */,
 				571843991EDFE6FE0076EE54 /* AppDelegate.swift */,
 				571843A01EDFE6FE0076EE54 /* Assets.xcassets */,
@@ -74,6 +85,18 @@
 				57D985CD1EE19126000EC907 /* MarkdownViewController.swift */,
 			);
 			path = "markdown-reader";
+			sourceTree = "<group>";
+		};
+		57D985CF1EE1BBCD000EC907 /* MarkdownRendering */ = {
+			isa = PBXGroup;
+			children = (
+				57D985D01EE1BD81000EC907 /* marked.js */,
+				57D985D21EE1BE79000EC907 /* github-markdown.css */,
+				57D985D41EE1BF25000EC907 /* emojify.min.js */,
+				57D985D61EE1BF82000EC907 /* emojify.min.css */,
+				57D985D81EE1BFBB000EC907 /* md.html */,
+			);
+			name = MarkdownRendering;
 			sourceTree = "<group>";
 		};
 		57EE31D61EE12D7F0038D21C /* Extentension */ = {
@@ -144,10 +167,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D985D91EE1BFBB000EC907 /* md.html in Resources */,
 				57EE31D51EE129AE0038D21C /* portfolio.md in Resources */,
 				571843A41EDFE6FE0076EE54 /* LaunchScreen.storyboard in Resources */,
 				571843A11EDFE6FE0076EE54 /* Assets.xcassets in Resources */,
+				57D985D71EE1BF82000EC907 /* emojify.min.css in Resources */,
+				57D985D11EE1BD81000EC907 /* marked.js in Resources */,
+				57D985D51EE1BF25000EC907 /* emojify.min.js in Resources */,
 				5718439F1EDFE6FE0076EE54 /* Main.storyboard in Resources */,
+				57D985D31EE1BE79000EC907 /* github-markdown.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
