@@ -26,7 +26,7 @@ class MarkdownViewController: UIViewController {
     }
 
     func set(title: String, content: String) {
-        self.title = title
+        self.title = title.headerWithoutPrefix()
         self.content = content
     }
 }

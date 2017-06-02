@@ -26,4 +26,11 @@ extension String {
         guard let prefix = self.components(separatedBy: " ").first else { return false }
         return prefix == headerPrefix.rawValue
     }
+
+    func headerWithoutPrefix() -> String? {
+        guard self.hasHeaderPrefix() else { return nil }
+        var headerArray = self.components(separatedBy: " ")
+        headerArray.remove(at: 0)
+        return headerArray.joined(separator: " ")
+    }
 }
