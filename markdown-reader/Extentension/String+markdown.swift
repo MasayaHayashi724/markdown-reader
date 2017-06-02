@@ -21,4 +21,9 @@ extension String {
         default: return false
         }
     }
+
+    func hasHeaderPrefix(of headerPrefix: HeaderPrefix) -> Bool {
+        guard let prefix = self.components(separatedBy: " ").first else { return false }
+        return prefix == headerPrefix.rawValue
+    }
 }

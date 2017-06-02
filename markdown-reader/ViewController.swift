@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
     // - Properties
 
-    private var fullContent: [String] = []
+    var fullContent: [String] = []
     var headers: [String] = [] {
         didSet {
             self.headerTableView.reloadData()
